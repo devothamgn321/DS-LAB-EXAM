@@ -45,7 +45,7 @@ void insertFront(Node H)
     newNode->link = H->link->link;
     H->link->link = newNode;
 }
-void DeleteLeftofK(Node H)
+void DeleteLeftoK(Node H)
 {
     int cnt,pos;
     Node TN,PN;
@@ -134,7 +134,7 @@ int main() {
         case 1: insertFront(header);
                 display(header);
                 break;            
-        case 2: DeleteLeftofK(header);
+        case 2: DeleteLeftoK(header);
                  display(header);
                  break; 
         case 3: SearchByPos(header);
